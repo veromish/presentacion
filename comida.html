@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vero - Mi Comida Favorita</title>
+    <meta name="description" content="Mi comida favorita — sabores deliciosos del corazón.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="bg-decorations">
+        <div class="bg-blob bg-blob-1"></div>
+        <div class="bg-blob bg-blob-2"></div>
+        <div class="bg-dots bg-dots-left"></div>
+        <div class="bg-dots bg-dots-right"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-xl custom-navbar">
+        <div class="container-fluid px-lg-4">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-heart-fill"></i> Vero</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#veroNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="veroNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="musica.html"><i class="bi bi-music-note-beamed"></i> Música Artista fav</a></li>
+                    <li class="nav-item"><a class="nav-link" href="familia.html"><i class="bi bi-people-fill"></i> Mi familia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mascotas.html"><i class="bi bi-paw-fill"></i> Mis mascotas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="amigos.html"><i class="bi bi-person-hearts"></i> Mis amigos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="stickers.html"><i class="bi bi-emoji-smile-fill"></i> Mis top stickers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="padrino.html"><i class="bi bi-star-fill"></i> Mi padrino</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="comida.html"><i class="bi bi-cup-hot-fill"></i> Mi comida favorita</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-wrapper">
+        <div class="container">
+
+            <!-- Hero Card -->
+            <div class="hero-card">
+                <span class="decorative-sparkle sparkle-top-right">🍜</span>
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <div class="photo-grid-collage">
+                            <div class="collage-item featured">
+                                <img src="imagenes/img7.jpg" alt="Disfrutando Ramen" class="viewable-img">
+                                <div class="collage-overlay">Disfrutando un delicioso Ramen 🍜</div>
+                            </div>
+                            <div class="collage-item">
+                                <img src="imagenes/img1.jpg" alt="Paseo y Comida" class="viewable-img">
+                                <div class="collage-overlay">Salidas a Comer</div>
+                            </div>
+                            <div class="collage-item">
+                                <img src="imagenes/img6.jpg" alt="Compartiendo en la Mesa" class="viewable-img">
+                                <div class="collage-overlay">Compartiendo Sabores</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="cursive-title">Mi Comida Favorita ♡</h1>
+                        <h4 class="hero-subtitle">Sabores deliciosos del corazón</h4>
+                        <p class="hero-description">
+                            El buen comer es uno de los grandes placeres de la vida. Me encanta descubrir nuevos sabores,
+                            experimentar recetas e ir a probar platos especiales como un buen ramen, lasaña, mariscos o postres deliciosos.
+                            ¡Aquí comparto mis platos e ingredientes favoritos!
+                        </p>
+                        <button class="btn btn-custom-primary" data-bs-toggle="modal" data-bs-target="#imageViewerModal" onclick="document.getElementById('modalImagePreview').src='imagenes/img7.jpg'; document.getElementById('modalImageTitle').textContent='Vero disfrutando su plato preferido';">
+                            <i class="bi bi-heart-fill"></i> Ver mis platos favoritos
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Cards Row -->
+            <div class="row g-3 mb-4">
+                <div class="col-12">
+                    <div class="hero-card">
+                        <h4 class="fw-bold text-primary mb-4 text-center"><i class="bi bi-journal-richtext"></i> Mis Platos Preferidos</h4>
+                        <div class="row g-3">
+                            <!-- Ramen -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                    <div style="background: linear-gradient(135deg, #1E5587, #3D7CB4); padding: 2rem; text-align:center;">
+                                        <span style="font-size:3.5rem;">🍜</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="fw-bold text-primary">Ramen Japonés</h6>
+                                        <p class="text-muted small mb-0">Caldo caliente, fideos suaves y huevo marinado. ¡El plato perfecto para los días fríos en la universidad!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Lasaña -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                    <div style="background: linear-gradient(135deg, #0F3B66, #1E5587); padding: 2rem; text-align:center;">
+                                        <span style="font-size:3.5rem;">🫕</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="fw-bold text-primary">Lasaña Casera</h6>
+                                        <p class="text-muted small mb-0">Con queso derretido y salsa boloñesa. La receta familiar que más me emociona cuando la cocina mamá.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Ceviche -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                    <div style="background: linear-gradient(135deg, #2A6FA8, #3D7CB4); padding: 2rem; text-align:center;">
+                                        <span style="font-size:3.5rem;">🦐</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="fw-bold text-primary">Ceviche Ecuatoriano</h6>
+                                        <p class="text-muted small mb-0">Fresco, limón y mariscos del Pacífico. El sabor que me recuerda a Ecuador y sus costas preciosas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Hamburguesa -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                    <div style="background: linear-gradient(135deg, #1E5587, #2A6FA8); padding: 2rem; text-align:center;">
+                                        <span style="font-size:3.5rem;">🍔</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="fw-bold text-primary">Hamburguesa Artesanal</h6>
+                                        <p class="text-muted small mb-0">Jugosa, con papas fritas crujientes. El clásico para salidas con amigos los fines de semana.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Postre -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                    <div style="background: linear-gradient(135deg, #3D7CB4, #2A6FA8); padding: 2rem; text-align:center;">
+                                        <span style="font-size:3.5rem;">🎂</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="fw-bold text-primary">Pastel de Chocolate</h6>
+                                        <p class="text-muted small mb-0">Húmedo, esponjoso y con crema. El postre obligatorio en cada cumpleaños y celebración familiar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Café -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                    <div style="background: linear-gradient(135deg, #0F3B66, #1E5587); padding: 2rem; text-align:center;">
+                                        <span style="font-size:3.5rem;">☕</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="fw-bold text-primary">Café Caliente</h6>
+                                        <p class="text-muted small mb-0">El fiel compañero de madrugadas de código y estudio. No hay sesión de programación sin mi café.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 Feature Cards -->
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="bi bi-egg-fried"></i></div>
+                        <h5 class="feature-title">Platos Fuertes</h5>
+                        <p class="feature-desc">Lasaña casera, ramen bien sazonado y asados para compartir. ¡Sabores intensos y reconfortantes!</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="bi bi-cup-hot-fill"></i></div>
+                        <h5 class="feature-title">Desayunos y Brunch</h5>
+                        <p class="feature-desc">Panqueques con miel, un buen café caliente y frutas frescas para empezar el día con toda la energía.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="bi bi-water"></i></div>
+                        <h5 class="feature-title">Sabores Marinos</h5>
+                        <p class="feature-desc">Ceviches tradicionales, mariscos y pescado fresco con ese toque ecuatoriano característico.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="bi bi-cookie"></i></div>
+                        <h5 class="feature-title">Postres y Dulces</h5>
+                        <p class="feature-desc">Helados artesanos, pasteles de chocolate y postres delicados para darle un toque dulce al día.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="custom-footer text-center">
+        <div class="container">
+            <p class="footer-quote">"Sueña, estudia, trabaja y haz que suceda." ♡</p>
+            <div class="social-links mb-3">
+                <a href="https://instagram.com" target="_blank" class="social-btn"><i class="bi bi-instagram"></i></a>
+                <a href="https://spotify.com" target="_blank" class="social-btn"><i class="bi bi-spotify"></i></a>
+                <a href="mailto:veronica@example.com" class="social-btn"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+            <p class="small text-white-50 mb-0">© 2026 Verónica Mishell Panchi Herrera</p>
+        </div>
+    </footer>
+
+    <!-- Image Viewer Modal -->
+    <div class="modal fade" id="imageViewerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 bg-light">
+                    <h5 class="modal-title fw-bold text-primary" id="modalImageTitle">Fotografía</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center bg-dark p-2">
+                    <img id="modalImagePreview" src="" alt="Vista previa" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-container">
+        <div id="liveToast" class="toast align-items-center text-white bg-primary border-0 rounded-4 shadow" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="toastMessageBody">Mensaje</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

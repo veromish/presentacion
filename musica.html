@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vero - Música & Artista Fav: Kenia OS</title>
+    <meta name="description" content="Mi artista favorita: Kenia OS — canciones, playlists y todo sobre esta increíble cantante.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .kenia-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #1E5587, #3D7CB4);
+            color: #fff;
+            border-radius: 50px;
+            padding: 6px 18px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .song-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 1rem 1.2rem;
+            border: 1px solid rgba(30,85,135,0.12);
+            box-shadow: 0 4px 16px rgba(30,85,135,0.07);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .song-card:hover {
+            transform: translateX(6px);
+            box-shadow: 0 8px 24px rgba(30,85,135,0.14);
+            border-color: rgba(30,85,135,0.3);
+        }
+        .song-number {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1E5587, #3D7CB4);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .song-info { flex: 1; }
+        .song-title { font-weight: 600; color: #0F3B66; font-size: 0.97rem; margin-bottom: 2px; }
+        .song-album { font-size: 0.82rem; color: #64748B; }
+        .song-play-icon { color: #1E5587; font-size: 1.4rem; transition: transform 0.3s; }
+        .song-card:hover .song-play-icon { transform: scale(1.2); }
+        .kenia-artist-card {
+            background: linear-gradient(135deg, #0F3B66 0%, #1E5587 50%, #3D7CB4 100%);
+            border-radius: 28px;
+            padding: 2.5rem;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .kenia-artist-card::before {
+            content: '🎵';
+            position: absolute;
+            font-size: 8rem;
+            opacity: 0.07;
+            top: -20px;
+            right: -20px;
+        }
+        .kenia-avatar-ring {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.15);
+            border: 4px solid rgba(255,255,255,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.2rem auto;
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-decorations">
+        <div class="bg-blob bg-blob-1"></div>
+        <div class="bg-blob bg-blob-2"></div>
+        <div class="bg-dots bg-dots-left"></div>
+        <div class="bg-dots bg-dots-right"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl custom-navbar">
+        <div class="container-fluid px-lg-4">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-heart-fill"></i> Vero</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#veroNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="veroNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="musica.html"><i class="bi bi-music-note-beamed"></i> Música Artista fav</a></li>
+                    <li class="nav-item"><a class="nav-link" href="familia.html"><i class="bi bi-people-fill"></i> Mi familia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mascotas.html"><i class="bi bi-paw-fill"></i> Mis mascotas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="amigos.html"><i class="bi bi-person-hearts"></i> Mis amigos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="stickers.html"><i class="bi bi-emoji-smile-fill"></i> Mis top stickers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="padrino.html"><i class="bi bi-star-fill"></i> Mi padrino</a></li>
+                    <li class="nav-item"><a class="nav-link" href="comida.html"><i class="bi bi-cup-hot-fill"></i> Mi comida favorita</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-wrapper">
+        <div class="container">
+
+            <!-- Hero Card -->
+            <div class="hero-card mb-4">
+                <span class="decorative-sparkle sparkle-top-right">🎵</span>
+                <div class="row align-items-center g-4">
+                    <!-- Kenia OS Artist Card -->
+                    <div class="col-lg-5">
+                        <div class="kenia-artist-card">
+                            <div class="kenia-avatar-ring">🎤</div>
+                            <h2 style="font-family:'Dancing Script',cursive; font-size:2.4rem; font-weight:700; margin-bottom:0.3rem;">Kenia OS</h2>
+                            <p class="small text-white-50 mb-3">Cantante, Compositora & Creadora de Contenido · México 🇲🇽</p>
+                            <div class="d-flex justify-content-center gap-2 flex-wrap mb-3">
+                                <span class="badge bg-white text-primary fw-semibold px-3 py-2 rounded-pill">Pop Latino</span>
+                                <span class="badge bg-white text-primary fw-semibold px-3 py-2 rounded-pill">R&B</span>
+                                <span class="badge bg-white text-primary fw-semibold px-3 py-2 rounded-pill">Indie Pop</span>
+                            </div>
+                            <!-- Vinyl animated -->
+                            <div class="vinyl-disc mt-2" id="vinylDisc">
+                                <div class="vinyl-center"></div>
+                            </div>
+                            <div class="audio-bars mt-3" id="audioBars" style="display: none; justify-content:center;">
+                                <div class="audio-bar"></div>
+                                <div class="audio-bar"></div>
+                                <div class="audio-bar"></div>
+                                <div class="audio-bar"></div>
+                                <div class="audio-bar"></div>
+                            </div>
+                            <button class="btn btn-light rounded-pill px-4 fw-semibold text-primary mt-3" id="playMusicBtn">
+                                <i class="bi bi-play-fill"></i> Reproducir Vibes
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-lg-7">
+                        <span class="kenia-badge"><i class="bi bi-star-fill"></i> Mi Artista Favorita</span>
+                        <h1 class="cursive-title">Música & Artista Fav ♡</h1>
+                        <h4 class="hero-subtitle">La banda sonora de mi vida: <strong>Kenia OS</strong></h4>
+                        <p class="hero-description">
+                            <strong>Kenia OS</strong> es una cantante y compositora mexicana que conquistó mi corazón con su mezcla única de pop, R&B y trap latino. 
+                            Su autenticidad, letras honestas sobre amor, empoderamiento y emociones cotidianas la hacen diferente a todas. 
+                            Empezó como youtuber y se convirtió en una de las artistas más frescas e innovadoras de la escena latina actual.
+                            ¡Cada canción suya me acompaña en el estudio, en mis salidas y en mis momentos de relajación!
+                        </p>
+                        <a href="https://open.spotify.com/artist/7vk9bCQHuGVRgmQJhvstJh" target="_blank" class="btn btn-custom-primary">
+                            <i class="bi bi-spotify"></i> Escuchar a Kenia OS en Spotify
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Songs Section -->
+            <div class="row g-4 mb-4">
+                <div class="col-lg-6">
+                    <div class="hero-card h-100">
+                        <h4 class="fw-bold text-primary mb-4"><i class="bi bi-music-note-list"></i> Mis Canciones Favoritas de Kenia OS</h4>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="song-card">
+                                <div class="song-number">1</div>
+                                <div class="song-info">
+                                    <div class="song-title">Soltera</div>
+                                    <div class="song-album">Sola · 2021</div>
+                                </div>
+                                <i class="bi bi-play-circle-fill song-play-icon"></i>
+                            </div>
+                            <div class="song-card">
+                                <div class="song-number">2</div>
+                                <div class="song-info">
+                                    <div class="song-title">No Te Debí Besar</div>
+                                    <div class="song-album">Ft. Micro TDH · 2022</div>
+                                </div>
+                                <i class="bi bi-play-circle-fill song-play-icon"></i>
+                            </div>
+                            <div class="song-card">
+                                <div class="song-number">3</div>
+                                <div class="song-info">
+                                    <div class="song-title">Bye Bye</div>
+                                    <div class="song-album">Kenia OS · 2023</div>
+                                </div>
+                                <i class="bi bi-play-circle-fill song-play-icon"></i>
+                            </div>
+                            <div class="song-card">
+                                <div class="song-number">4</div>
+                                <div class="song-info">
+                                    <div class="song-title">Envidia</div>
+                                    <div class="song-album">Kenia OS · 2022</div>
+                                </div>
+                                <i class="bi bi-play-circle-fill song-play-icon"></i>
+                            </div>
+                            <div class="song-card">
+                                <div class="song-number">5</div>
+                                <div class="song-info">
+                                    <div class="song-title">Wapo Traketero</div>
+                                    <div class="song-album">Kenia OS · 2021</div>
+                                </div>
+                                <i class="bi bi-play-circle-fill song-play-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Kenia OS -->
+                <div class="col-lg-6">
+                    <div class="hero-card h-100">
+                        <h4 class="fw-bold text-primary mb-3"><i class="bi bi-person-heart"></i> ¿Por qué Kenia OS es mi favorita?</h4>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="feature-icon-wrapper" style="width:48px;height:48px;flex-shrink:0;">
+                                    <i class="bi bi-heart-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold text-primary mb-1">Autenticidad total</h6>
+                                    <p class="text-muted small mb-0">Sus letras son honestas y reflejan emociones reales. No canta lo que otros quieren escuchar, sino lo que siente de verdad.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="feature-icon-wrapper" style="width:48px;height:48px;flex-shrink:0;">
+                                    <i class="bi bi-gem"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold text-primary mb-1">Estilo único</h6>
+                                    <p class="text-muted small mb-0">Mezcla pop, trap y R&B con un toque personal inconfundible. Cada canción suena fresca y diferente.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="feature-icon-wrapper" style="width:48px;height:48px;flex-shrink:0;">
+                                    <i class="bi bi-trophy-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold text-primary mb-1">De Youtuber a Artista</h6>
+                                    <p class="text-muted small mb-0">Su historia es inspiradora. Comenzó como creadora de contenido y hoy es una de las voces más importantes del pop latino joven.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="feature-icon-wrapper" style="width:48px;height:48px;flex-shrink:0;">
+                                    <i class="bi bi-lightning-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold text-primary mb-1">Energía positiva</h6>
+                                    <p class="text-muted small mb-0">Escuchar su música me da energía para estudiar, programar y superar cualquier obstáculo del día.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 Feature Cards -->
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="bi bi-music-note-list"></i></div>
+                        <h5 class="feature-title">Playlists de Kenia OS</h5>
+                        <p class="feature-desc">Tengo una playlist completa con todas sus canciones para cada estado de ánimo del día.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="bi bi-mic-fill"></i></div>
+                        <h5 class="feature-title">Top 5 Canciones</h5>
+                        <p class="feature-desc">Soltera, No Te Debí Besar, Bye Bye, Envidia y Wapo Traketero son mis indispensables.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="bi bi-ticket-perforated-fill"></i></div>
+                        <h5 class="feature-title">Conciertos</h5>
+                        <p class="feature-desc">Sueño con verla en vivo algún día. La energía en sus presentaciones en vivo es increíble.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="bi bi-disc-fill"></i></div>
+                        <h5 class="feature-title">Géneros que Amo</h5>
+                        <p class="feature-desc">Pop Latino, R&B, Trap y su Indie Pop que ella fusiona con elegancia y estilo propio.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="custom-footer text-center">
+        <div class="container">
+            <p class="footer-quote">"Sueña, estudia, trabaja y haz que suceda." ♡</p>
+            <div class="social-links mb-3">
+                <a href="https://instagram.com" target="_blank" class="social-btn"><i class="bi bi-instagram"></i></a>
+                <a href="https://spotify.com" target="_blank" class="social-btn"><i class="bi bi-spotify"></i></a>
+                <a href="mailto:veronica@example.com" class="social-btn"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+            <p class="small text-white-50 mb-0">© 2026 Verónica Mishell Panchi Herrera</p>
+        </div>
+    </footer>
+
+    <!-- Image Viewer Modal -->
+    <div class="modal fade" id="imageViewerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 bg-light">
+                    <h5 class="modal-title fw-bold text-primary" id="modalImageTitle">Fotografía</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center bg-dark p-2">
+                    <img id="modalImagePreview" src="" alt="Vista previa" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-container">
+        <div id="liveToast" class="toast align-items-center text-white bg-primary border-0 rounded-4 shadow" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="toastMessageBody">Mensaje</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
