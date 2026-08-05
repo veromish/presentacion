@@ -18,176 +18,89 @@
         <div class="bg-dots bg-dots-right"></div>
     </div>
 
-    <nav class="navbar navbar-expand-xl custom-navbar">
-        <div class="container-fluid px-lg-4">
-            <a class="navbar-brand" href="index.html"><i class="bi bi-heart-fill"></i> Vero</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#veroNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="veroNavbar">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="musica.html"><i class="bi bi-music-note-beamed"></i> Música Artista fav</a></li>
-                    <li class="nav-item"><a class="nav-link" href="familia.html"><i class="bi bi-people-fill"></i> Mi familia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="mascotas.html"><i class="bi bi-paw-fill"></i> Mis mascotas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="amigos.html"><i class="bi bi-person-hearts"></i> Mis amigos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="stickers.html"><i class="bi bi-emoji-smile-fill"></i> Mis top stickers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="padrino.html"><i class="bi bi-star-fill"></i> Mi padrino</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="comida.html"><i class="bi bi-cup-hot-fill"></i> Mi comida favorita</a></li>
-                </ul>
+    <div class="container-fluid p-0">
+    <div class="row g-0">
+        <div class="col-md-3 col-lg-2 sidebar-menu">
+            <div class="brand-title">Mi Presentación</div>
+            <div class="nav flex-column">
+                <a class="nav-link " href="index.html">Inicio</a>
+                <a class="nav-link " href="familia.html">Mi familia</a>
+                <a class="nav-link " href="mascotas.html">Mis mascotas</a>
+                <a class="nav-link " href="amigos.html">Mis amigos</a>
+                <a class="nav-link active" href="comida.html">Mi comida</a>
+                <a class="nav-link " href="musica.html">Música</a>
             </div>
         </div>
-    </nav>
+        <div class="col-md-9 col-lg-10 p-4" style="height: 100vh; overflow-y: auto;">
+
 
     <main class="main-wrapper">
         <div class="container">
 
-            <!-- Hero Card -->
-            <div class="hero-card">
-                <span class="decorative-sparkle sparkle-top-right">🍜</span>
-                <div class="row align-items-center g-4">
-                    <div class="col-lg-6">
-                        <div class="photo-grid-collage">
-                            <div class="collage-item featured">
-                                <img src="imagenes/img7.jpg" alt="Disfrutando Ramen" class="viewable-img">
-                                <div class="collage-overlay">Disfrutando un delicioso Ramen 🍜</div>
-                            </div>
-                            <div class="collage-item">
-                                <img src="imagenes/img1.jpg" alt="Paseo y Comida" class="viewable-img">
-                                <div class="collage-overlay">Salidas a Comer</div>
-                            </div>
-                            <div class="collage-item">
-                                <img src="imagenes/img6.jpg" alt="Compartiendo en la Mesa" class="viewable-img">
-                                <div class="collage-overlay">Compartiendo Sabores</div>
+            <!-- Hero Title -->
+            <div class="text-center mb-5 mt-3">
+                <h1 class="cursive-title">Mi Comida Favorita</h1>
+                <p class="text-muted fs-5">Sabores deliciosos del corazón.</p>
+            </div>
+
+            <div class="row g-5 mb-5">
+                <!-- Tarjeta General Comida -->
+                <div class="col-md-12">
+                    <div class="card shadow-sm border-0" style="border: 2px solid #002366 !important; border-radius: 15px; overflow: hidden;">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-12">
+                                <div class="card-body p-4 p-md-5 text-center">
+                                    <h3 class="card-title fw-bold" style="color: #002366;"><i class="bi bi-balloon-heart-fill"></i> El Placer de Comer</h3>
+                                    <p class="card-text fs-5 mt-3">El buen comer es uno de mis grandes placeres.</p>
+                                    <p class="card-text text-muted">Amo la comida del mar, un buen café caliente para arrancar el día, y por supuesto, platillos que reconfortan el alma como el encebollado y el ramen. ¡Aquí te muestro lo que más me gusta!</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h1 class="cursive-title">Mi Comida Favorita ♡</h1>
-                        <h4 class="hero-subtitle">Sabores deliciosos del corazón</h4>
-                        <p class="hero-description">
-                            El buen comer es uno de los grandes placeres de la vida. Me encanta descubrir nuevos sabores,
-                            experimentar recetas e ir a probar platos especiales como un buen ramen, lasaña, mariscos o postres deliciosos.
-                            ¡Aquí comparto mis platos e ingredientes favoritos!
-                        </p>
-                        <button class="btn btn-custom-primary" data-bs-toggle="modal" data-bs-target="#imageViewerModal" onclick="document.getElementById('modalImagePreview').src='imagenes/img7.jpg'; document.getElementById('modalImageTitle').textContent='Vero disfrutando su plato preferido';">
-                            <i class="bi bi-heart-fill"></i> Ver mis platos favoritos
-                        </button>
                     </div>
                 </div>
             </div>
 
             <!-- Menu Cards Row -->
-            <div class="row g-3 mb-4">
-                <div class="col-12">
-                    <div class="hero-card">
-                        <h4 class="fw-bold text-primary mb-4 text-center"><i class="bi bi-journal-richtext"></i> Mis Platos Preferidos</h4>
-                        <div class="row g-3">
-                            <!-- Ramen -->
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
-                                    <div style="background: linear-gradient(135deg, #1E5587, #3D7CB4); padding: 2rem; text-align:center;">
-                                        <span style="font-size:3.5rem;">🍜</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="fw-bold text-primary">Ramen Japonés</h6>
-                                        <p class="text-muted small mb-0">Caldo caliente, fideos suaves y huevo marinado. ¡El plato perfecto para los días fríos en la universidad!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Lasaña -->
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
-                                    <div style="background: linear-gradient(135deg, #0F3B66, #1E5587); padding: 2rem; text-align:center;">
-                                        <span style="font-size:3.5rem;">🫕</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="fw-bold text-primary">Lasaña Casera</h6>
-                                        <p class="text-muted small mb-0">Con queso derretido y salsa boloñesa. La receta familiar que más me emociona cuando la cocina mamá.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Ceviche -->
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
-                                    <div style="background: linear-gradient(135deg, #2A6FA8, #3D7CB4); padding: 2rem; text-align:center;">
-                                        <span style="font-size:3.5rem;">🦐</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="fw-bold text-primary">Ceviche Ecuatoriano</h6>
-                                        <p class="text-muted small mb-0">Fresco, limón y mariscos del Pacífico. El sabor que me recuerda a Ecuador y sus costas preciosas.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Hamburguesa -->
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
-                                    <div style="background: linear-gradient(135deg, #1E5587, #2A6FA8); padding: 2rem; text-align:center;">
-                                        <span style="font-size:3.5rem;">🍔</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="fw-bold text-primary">Hamburguesa Artesanal</h6>
-                                        <p class="text-muted small mb-0">Jugosa, con papas fritas crujientes. El clásico para salidas con amigos los fines de semana.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Postre -->
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
-                                    <div style="background: linear-gradient(135deg, #3D7CB4, #2A6FA8); padding: 2rem; text-align:center;">
-                                        <span style="font-size:3.5rem;">🎂</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="fw-bold text-primary">Pastel de Chocolate</h6>
-                                        <p class="text-muted small mb-0">Húmedo, esponjoso y con crema. El postre obligatorio en cada cumpleaños y celebración familiar.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Café -->
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
-                                    <div style="background: linear-gradient(135deg, #0F3B66, #1E5587); padding: 2rem; text-align:center;">
-                                        <span style="font-size:3.5rem;">☕</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="fw-bold text-primary">Café Caliente</h6>
-                                        <p class="text-muted small mb-0">El fiel compañero de madrugadas de código y estudio. No hay sesión de programación sin mi café.</p>
-                                    </div>
-                                </div>
-                            </div>
+            <h4 class="fw-bold text-center mb-4" style="color: #00BFFF;"><i class="bi bi-journal-richtext"></i> Mis Platos Preferidos</h4>
+            <div class="row g-4 mb-5">
+                <!-- Encebollado -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; border-bottom: 4px solid #002366 !important;">
+                        <img src="imagenes/encebollado.png" class="card-img-top" alt="Encebollado" style="height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                        <div class="card-body text-center p-4">
+                            <h5 class="fw-bold" style="color: #002366;">Encebollado</h5>
+                            <p class="text-muted mb-0">Mi plato favorito indiscutible. Tradición ecuatoriana llena de sabor y recuerdos.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- 4 Feature Cards -->
-            <div class="row g-4">
+                <!-- Comida del Mar -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="feature-card">
-                        <div class="feature-icon-wrapper"><i class="bi bi-egg-fried"></i></div>
-                        <h5 class="feature-title">Platos Fuertes</h5>
-                        <p class="feature-desc">Lasaña casera, ramen bien sazonado y asados para compartir. ¡Sabores intensos y reconfortantes!</p>
+                    <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; border-bottom: 4px solid #00BFFF !important;">
+                        <img src="imagenes/mariscos.png" class="card-img-top" alt="Comida del mar" style="height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                        <div class="card-body text-center p-4">
+                            <h5 class="fw-bold" style="color: #009FDF;">Comida del Mar</h5>
+                            <p class="text-muted mb-0">Me gusta mucho toda la comida del mar. Mariscos frescos, pescado y langostinos.</p>
+                        </div>
                     </div>
                 </div>
+                <!-- Ramen -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="feature-card">
-                        <div class="feature-icon-wrapper"><i class="bi bi-cup-hot-fill"></i></div>
-                        <h5 class="feature-title">Desayunos y Brunch</h5>
-                        <p class="feature-desc">Panqueques con miel, un buen café caliente y frutas frescas para empezar el día con toda la energía.</p>
+                    <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; border-bottom: 4px solid #40E0D0 !important;">
+                        <img src="imagenes/ramen.png" class="card-img-top" alt="Ramen" style="height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                        <div class="card-body text-center p-4">
+                            <h5 class="fw-bold" style="color: #30C0B0;">Ramen Japonés</h5>
+                            <p class="text-muted mb-0">Disfruto mucho de un buen ramen con su caldo caliente y fideos perfectamente cocidos.</p>
+                        </div>
                     </div>
                 </div>
+                <!-- Café -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="feature-card">
-                        <div class="feature-icon-wrapper"><i class="bi bi-water"></i></div>
-                        <h5 class="feature-title">Sabores Marinos</h5>
-                        <p class="feature-desc">Ceviches tradicionales, mariscos y pescado fresco con ese toque ecuatoriano característico.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-card">
-                        <div class="feature-icon-wrapper"><i class="bi bi-cookie"></i></div>
-                        <h5 class="feature-title">Postres y Dulces</h5>
-                        <p class="feature-desc">Helados artesanos, pasteles de chocolate y postres delicados para darle un toque dulce al día.</p>
+                    <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; border-bottom: 4px solid #002366 !important;">
+                        <img src="imagenes/cafe.png" class="card-img-top" alt="Café" style="height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                        <div class="card-body text-center p-4">
+                            <h5 class="fw-bold" style="color: #002366;">Café Caliente</h5>
+                            <p class="text-muted mb-0">Me encanta tomar el café bien caliente, el aliado perfecto para las largas noches de programación.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,7 +110,7 @@
 
     <footer class="custom-footer text-center">
         <div class="container">
-            <p class="footer-quote">"Sueña, estudia, trabaja y haz que suceda." ♡</p>
+            <p class="footer-quote">"Sueña, estudia, trabaja y haz que suceda." </p>
             <div class="social-links mb-3">
                 <a href="https://instagram.com" target="_blank" class="social-btn"><i class="bi bi-instagram"></i></a>
                 <a href="https://spotify.com" target="_blank" class="social-btn"><i class="bi bi-spotify"></i></a>
@@ -234,5 +147,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+</div></div></div>
+<!-- Fin Layout -->
 </body>
 </html>

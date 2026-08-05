@@ -18,93 +18,71 @@
         <div class="bg-dots bg-dots-right"></div>
     </div>
 
-    <nav class="navbar navbar-expand-xl custom-navbar">
-        <div class="container-fluid px-lg-4">
-            <a class="navbar-brand" href="index.html"><i class="bi bi-heart-fill"></i> Vero</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#veroNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="veroNavbar">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="musica.html"><i class="bi bi-music-note-beamed"></i> Música Artista fav</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="familia.html"><i class="bi bi-people-fill"></i> Mi familia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="mascotas.html"><i class="bi bi-paw-fill"></i> Mis mascotas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="amigos.html"><i class="bi bi-person-hearts"></i> Mis amigos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="stickers.html"><i class="bi bi-emoji-smile-fill"></i> Mis top stickers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="padrino.html"><i class="bi bi-star-fill"></i> Mi padrino</a></li>
-                    <li class="nav-item"><a class="nav-link" href="comida.html"><i class="bi bi-cup-hot-fill"></i> Mi comida favorita</a></li>
-                </ul>
+    <div class="container-fluid p-0">
+    <div class="row g-0">
+        <div class="col-md-3 col-lg-2 sidebar-menu">
+            <div class="brand-title">Mi Presentación</div>
+            <div class="nav flex-column">
+                <a class="nav-link " href="index.html">Inicio</a>
+                <a class="nav-link active" href="familia.html">Mi familia</a>
+                <a class="nav-link " href="mascotas.html">Mis mascotas</a>
+                <a class="nav-link " href="amigos.html">Mis amigos</a>
+                <a class="nav-link " href="comida.html">Mi comida</a>
+                <a class="nav-link " href="musica.html">Música</a>
             </div>
         </div>
-    </nav>
+        <div class="col-md-9 col-lg-10 p-4" style="height: 100vh; overflow-y: auto;">
+
 
     <main class="main-wrapper">
         <div class="container">
-            <div class="hero-card">
-                <span class="decorative-sparkle sparkle-top-right">❤️</span>
-                <div class="row align-items-center g-4">
-                    <div class="col-lg-6">
-                        <div class="photo-grid-collage">
-                            <div class="collage-item featured">
-                                <img src="imagenes/img4.jpg" alt="Nuestros Padres" class="viewable-img">
-                                <div class="collage-overlay">Nuestros Padres (Memoria Vintage)</div>
-                            </div>
-                            <div class="collage-item">
-                                <img src="imagenes/img10.jpg" alt="Vero y su hermano" class="viewable-img">
-                                <div class="collage-overlay">Hermanos</div>
-                            </div>
-                            <div class="collage-item">
-                                <img src="imagenes/img9.jpg" alt="Paseo Familiar" class="viewable-img">
-                                <div class="collage-overlay">Paseo Familiar</div>
-                            </div>
-                            <div class="collage-item">
-                                <img src="imagenes/img1.jpg" alt="Vero con Mamá" class="viewable-img">
-                                <div class="collage-overlay">Vero & Mamá</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h1 class="cursive-title">Mi Familia: Recuerdos Queridos ♡</h1>
-                        <h4 class="hero-subtitle">El pilar de mi vida y mi mayor tesoro</h4>
-                        <p class="hero-description">
-                            Mi familia es mi mayor apoyo y refugio. Compartir tiempo con mis padres, mis hermanos y mi abuelita es lo que más valoro en este mundo.
-                            Ellos me brindan su amor incondicional, alegría y enseñanzas en cada etapa. ¡Aquí les presento a mis seres más queridos!
-                        </p>
-                        <button class="btn btn-custom-primary" data-bs-toggle="modal" data-bs-target="#imageViewerModal" onclick="document.getElementById('modalImagePreview').src='imagenes/img4.jpg'; document.getElementById('modalImageTitle').textContent='Foto de Familia Vintage';">
-                            <i class="bi bi-heart-fill"></i> Ver más fotos de mi familia
-                        </button>
-                    </div>
-                </div>
+            <!-- Hero Title -->
+            <div class="text-center mb-5 mt-3">
+                <h1 class="cursive-title">Mi Familia</h1>
+                <p class="text-muted fs-5">El pilar de mi vida y mi mayor tesoro.</p>
             </div>
 
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-card">
-                        <div class="feature-icon-wrapper"><i class="bi bi-people-fill"></i></div>
-                        <h5 class="feature-title">Mis padres</h5>
-                        <p class="feature-desc">Nuestros guías y apoyo incondicional. Siempre ahí con un abrazo y un valioso consejo de vida.</p>
+                <!-- Tarjeta Papás -->
+                <div class="col-md-12">
+                    <div class="card shadow-sm border-0" style="border: 2px solid #002366 !important;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="imagenes/papas_jovenes.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Mis Papás Jóvenes">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4 p-md-5 d-flex flex-column justify-content-center h-100">
+                                    <h3 class="card-title fw-bold" style="color: #002366;">Mis Padres</h3>
+                                    <p class="card-text fs-5">Ellos son mi mami <strong>Nancy Fabiola</strong> y mi papi <strong>Edgar Emilio</strong>.</p>
+                                    <p class="card-text text-muted">Mis padres son mi mayor apoyo. Son la base de nuestra familia y me han brindado su amor incondicional y enseñanzas en cada etapa de mi vida.</p>
+                                    <div>
+                                        <button class="btn btn-azul-rey mt-3 px-4 py-2">Mi mayor inspiración</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-card">
-                        <div class="feature-icon-wrapper"><i class="bi bi-person-fill-add"></i></div>
-                        <h5 class="feature-title">Mis hermanos</h5>
-                        <p class="feature-desc">Compañeros de juegos, risas y aventuras desde siempre. Mis verdaderos cómplices y amigos.</p>
+
+                <!-- Tarjeta Mamá de niña -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 h-100" style="border: 2px solid #00BFFF !important;">
+                        <img src="imagenes/foto_niña_mama.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Mi mamá de niña">
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold" style="color: #009FDF;">Mi mami de niña</h4>
+                            <p class="card-text">Ella es mi mami, Nancy Fabiola, cuando era niña. Siempre me han dicho que me parezco muchísimo a ella. ¡Incluso tenemos en común que ambas estudiamos en la misma escuela, la Escuela Elvira Ortega!</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-card">
-                        <div class="feature-icon-wrapper"><i class="bi bi-heart-pulse-fill"></i></div>
-                        <h5 class="feature-title">Mi abuela</h5>
-                        <p class="feature-desc">La sabiduría y dulzura de la familia. Sus historias, tradición y su comida son lo mejor.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-card">
-                        <div class="feature-icon-wrapper"><i class="bi bi-cake2-fill"></i></div>
-                        <h5 class="feature-title">Celebraciones</h5>
-                        <p class="feature-desc">Reuniones de cumpleaños y fiestas familiares. ¡La buena comida y las risas nunca faltan en casa!</p>
+
+                <!-- Tarjeta Hermano -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 h-100" style="border: 2px solid #40E0D0 !important;">
+                        <img src="imagenes/mi_hermano.jpg" class="card-img-top" style="height: 350px; object-fit: cover; object-position: center top;" alt="Mi Hermano">
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold" style="color: #30C0B0;">Mi Hermano</h4>
+                            <p class="card-text">Él es mi hermano, <strong>Edgar Andrés</strong>. Mi compañero de vida, de juegos y aventuras desde siempre.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,7 +91,7 @@
 
     <footer class="custom-footer text-center">
         <div class="container">
-            <p class="footer-quote">"Sueña, estudia, trabaja y haz que suceda." ♡</p>
+            <p class="footer-quote">"Sueña, estudia, trabaja y haz que suceda." </p>
             <div class="social-links mb-3">
                 <a href="https://instagram.com" target="_blank" class="social-btn"><i class="bi bi-instagram"></i></a>
                 <a href="https://spotify.com" target="_blank" class="social-btn"><i class="bi bi-spotify"></i></a>
@@ -148,5 +126,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+</div></div></div>
+<!-- Fin Layout -->
 </body>
 </html>
