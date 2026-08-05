@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Estilos básicos - Proyecto de Universidad */
+body {
+    background-color: #e0f7fa; /* Celeste claro de fondo */
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Tipografía y Títulos Profesionales */
+h1, h2, h3, .cursive-title {
+    font-family: 'Dancing Script', cursive;
+    color: #002366; /* Azul Rey */
+    font-weight: 700;
+}
+.cursive-title {
+    font-size: 3.5rem;
+    border-bottom: 3px solid #00BFFF; /* Subrayado Azul Capri */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Colores personalizados usando tonos de azul */
+/* Azul Rey: #002366, Turquesa: #40E0D0, Azul Capri: #00BFFF, Celeste: #87CEEB */
+
+.bg-azul-rey { background-color: #002366 !important; color: white; }
+.bg-turquesa { background-color: #40E0D0 !important; color: black; }
+.bg-azul-capri { background-color: #00BFFF !important; color: white; }
+.bg-celeste { background-color: #87CEEB !important; color: black; }
+
+.text-azul-rey { color: #002366 !important; }
+.text-turquesa { color: #30C0B0 !important; }
+.text-azul-capri { color: #009FDF !important; }
+
+/* Botones personalizados estilo Bootstrap base */
+.btn-azul-rey {
+    background-color: #002366;
+    color: white;
+    border: none;
+}
+.btn-azul-rey:hover {
+    background-color: #001540;
+    color: white;
+}
+
+.btn-turquesa {
+    background-color: #40E0D0;
+    color: black;
+    border: none;
+}
+.btn-turquesa:hover {
+    background-color: #20C0B0;
+    color: black;
+}
+
+.btn-azul-capri {
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+}
+.btn-azul-capri:hover {
+    background-color: #009FDF;
+    color: white;
+}
+
+.btn-celeste {
+    background-color: #87CEEB;
+    color: black;
+    border: none;
+}
+.btn-celeste:hover {
+    background-color: #67AEDB;
+    color: black;
+}
+
+/* Navbar básico */
+.custom-navbar {
+    background-color: #002366 !important; /* Azul rey */
+}
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: white !important;
+}
+.custom-navbar .nav-link:hover {
+    color: #40E0D0 !important; /* Turquesa al pasar el mouse */
+}
+
+/* Tarjetas básicas */
+.card, .hero-card, .feature-card {
+    background-color: white;
+    border: 2px solid #00BFFF !important; /* Borde Azul Capri */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Imágenes básicas */
+.viewable-img, .profile-avatar {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #002366;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.profile-avatar {
+    width: 320px; /* Agrandado */
+    height: 320px; /* Agrandado */
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Sidebar Vertical Menu */
+.sidebar-menu {
+    background-color: #002366;
+    min-height: 100vh;
+    padding: 20px;
+    color: white;
+}
+.sidebar-menu .nav-link {
+    color: #e0f7fa;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    font-weight: 500;
+}
+/* Colores combinados para cada submenu (tonos azules) */
+.sidebar-menu .nav-link:nth-child(1):hover, .sidebar-menu .nav-link:nth-child(1).active {
+    border-left-color: #87CEEB; background-color: rgba(135, 206, 235, 0.2); color: #87CEEB; 
+}
+.sidebar-menu .nav-link:nth-child(2):hover, .sidebar-menu .nav-link:nth-child(2).active {
+    border-left-color: #00BFFF; background-color: rgba(0, 191, 255, 0.2); color: #00BFFF; 
+}
+.sidebar-menu .nav-link:nth-child(3):hover, .sidebar-menu .nav-link:nth-child(3).active {
+    border-left-color: #40E0D0; background-color: rgba(64, 224, 208, 0.2); color: #40E0D0; 
+}
+.sidebar-menu .nav-link:nth-child(4):hover, .sidebar-menu .nav-link:nth-child(4).active {
+    border-left-color: #009FDF; background-color: rgba(0, 159, 223, 0.2); color: #009FDF; 
+}
+.sidebar-menu .nav-link:nth-child(5):hover, .sidebar-menu .nav-link:nth-child(5).active {
+    border-left-color: #30C0B0; background-color: rgba(48, 192, 176, 0.2); color: #30C0B0; 
+}
+.sidebar-menu .nav-link:nth-child(6):hover, .sidebar-menu .nav-link:nth-child(6).active {
+    border-left-color: #C4E0F9; background-color: rgba(196, 224, 249, 0.2); color: #C4E0F9; 
+}
+
+.sidebar-menu .brand-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px dashed #00BFFF;
+    padding-bottom: 10px;
+    color: #40E0D0;
+}
+
+/* Reemplazo de photo-grid-collage básico */
+.photo-grid-collage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.collage-item {
+    flex: 1 1 calc(50% - 10px);
+    text-align: center;
+    background-color: #87CEEB;
+    padding: 5px;
+    border-radius: 5px;
+}
+.collage-item.featured {
+    flex: 1 1 100%;
+}
+.collage-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.collage-overlay {
+    background-color: #002366;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.custom-footer {
+    background-color: #002366;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+.social-btn {
+    color: #00BFFF;
+    margin: 0 10px;
+    text-decoration: none;
+}
